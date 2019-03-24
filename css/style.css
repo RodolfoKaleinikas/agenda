@@ -4,4 +4,44 @@ body {
   color: white;
 }
 
+.title {
+  color: #4ad509;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: .2rem;
+}
+
+.form_cadastro_tarefa label {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.form_cadastro_tarefa input, .form_cadastro_tarefa .btn {
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  background: transparent;
+  border: 1px solid #4ad509;
+  border-radius: 1rem;
+  transition: .3s ease;
+  max-width: 500px;
+  font-family: monospace;
+}
+
+.form_cadastro_tarefa input:focus, .form_cadastro_tarefa .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #4ad509;
+}
+
+.form_cadastro_tarefa input[type="submit"], .form_cadastro_tarefa input[type="reset"], .form_cadastro_tarefa .btn {
+  margin-top: 15px;
+}
+
+.form_cadastro_tarefa input[type="submit"]:hover, .form_cadastro_tarefa input[type="reset"]:hover, .form_cadastro_tarefa .btn:hover {
+  background: #2c7c05;
+  cursor: pointer;
+}
+
+
+
 
