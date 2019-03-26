@@ -11,12 +11,17 @@ body {
   letter-spacing: .2rem;
 }
 
+.header {
+  background: #222;
+  min-width: 100%;
+}
+
 .form_cadastro_tarefa label {
   font-size: 16px;
   margin: 15px 0;
 }
 
-.form_cadastro_tarefa input, .form_cadastro_tarefa .btn {
+.form_cadastro_tarefa input, .form_cadastro_tarefa .btn, button.btn_volta {
   padding: 15px;
   font-size: 16px;
   color: white;
@@ -37,10 +42,47 @@ body {
   margin-top: 15px;
 }
 
-.form_cadastro_tarefa input[type="submit"]:hover, .form_cadastro_tarefa input[type="reset"]:hover, .form_cadastro_tarefa .btn:hover {
+.form_cadastro_tarefa input[type="submit"]:hover, .form_cadastro_tarefa input[type="reset"]:hover, .form_cadastro_tarefa .btn:hover, button.btn_volta:hover {
   background: #2c7c05;
   cursor: pointer;
 }
+
+button.btn_volta {
+  margin-top: 20px;
+}
+
+/* Estilo tabela consulta */
+
+.tabela_consulta {
+  border: 1px solid #4ad509;
+  font-size: 16px;
+}
+
+
+.tabela_consulta td, .tabela_consulta th {
+  border: 1px solid #4ad509;
+  padding: 10px;
+}
+
+.tabela_consulta td a.editar {
+  color: aqua;
+}
+
+.tabela_consulta td a.excluir {
+  color: red;
+}
+
+.tabela_consulta tr:hover {
+  background: #2c7c05;
+}
+
+button.btn_volta {
+  cursor: pointer;
+  border: 1px solid #4ad509;
+  padding: 10px;
+}
+
+
 
 
 
