@@ -49,7 +49,11 @@ $query = $mysqli->query($comando);
           echo "</table>";
         ?>
 
-        <button onclick="location.href='index.html'" class="btn_volta" href="index.html">Página inicial</button>
+        <div class="d-flex justify-content-center btns_consulta">
+          <button onclick="location.href='index.html'" class="btn_consulta" href="index.html">Página inicial</button>
+          <!-- <button onclick="location.href='editar.php?id='.$id" class="btn_consulta" href="index.html">Editar</button> -->
+          <!-- <button onclick="location.href='excluir.php?id='.$id" class="btn_consulta btn_consulta_excluir" href="index.html">Excluir</button> -->
+        </div>
       </div>
     </div>
   </section>

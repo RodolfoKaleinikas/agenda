@@ -3,20 +3,21 @@
 include "conecta_banco.php";
 include "header.php";
 
-$tarefa      = $_POST["txttarefa"];
-$data_tarefa = $_POST["txtdata"];
+$id = $_POST["txtid"];
+$tarefa = $_POST["txttarefa"];
+$data = $_POST["txtdata"];
 
-$comando = "INSERT INTO agenda(tarefa, data_entrega) VALUES ('$tarefa', '$data_tarefa')";
+$comando = "UPDATE agenda SET tarefa='$tarefa', data_entrega='$data' WHERE id=$id";
 
 $query = $mysqli->query($comando);
 
 ?>
 
-  <header class="header"> 
+  <header class="header">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="title">Incluir tarefas</h1>
+          <h1 class="title">Editar tarefas</h1>
         </div>
       </div>
     </div>
@@ -25,7 +26,7 @@ $query = $mysqli->query($comando);
   <section class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="title_excluir">Inclusão realizada com sucesso</h2>
+        <h2 class="title_excluir">Edição realizada com sucesso</h2>
       </div>
     </div>
   </section>
@@ -35,5 +36,5 @@ $query = $mysqli->query($comando);
     <button onclick="location.href='index.html'" class="btn">Página inicial</button>
   </div>
 
-  </body>
+</body>
 </html>

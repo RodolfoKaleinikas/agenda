@@ -14,6 +14,7 @@ body {
 .header {
   background: #222;
   min-width: 100%;
+  margin-bottom: 40px;
 }
 
 .form_cadastro_tarefa label {
@@ -21,7 +22,7 @@ body {
   margin: 15px 0;
 }
 
-.form_cadastro_tarefa input, .form_cadastro_tarefa .btn, button.btn_volta {
+.form_cadastro_tarefa input, .form_cadastro_tarefa .btn, button.btn_consulta, .btn {
   padding: 15px;
   font-size: 16px;
   color: white;
@@ -42,12 +43,12 @@ body {
   margin-top: 15px;
 }
 
-.form_cadastro_tarefa input[type="submit"]:hover, .form_cadastro_tarefa input[type="reset"]:hover, .form_cadastro_tarefa .btn:hover, button.btn_volta:hover {
+.form_cadastro_tarefa input[type="submit"]:hover, .form_cadastro_tarefa input[type="reset"]:hover, .form_cadastro_tarefa .btn:hover, button.btn_consulta:hover {
   background: #2c7c05;
   cursor: pointer;
 }
 
-button.btn_volta {
+button.btn_consulta {
   margin-top: 20px;
 }
 
@@ -76,10 +77,27 @@ button.btn_volta {
   background: #2c7c05;
 }
 
-button.btn_volta {
+button.btn_consulta {
   cursor: pointer;
   border: 1px solid #4ad509;
   padding: 10px;
+  margin: 15px 10px;
+  min-width: 160px;
+}
+
+.btn_consulta.btn_consulta_excluir:hover {
+  background: red;
+}
+
+.btns_consulta {
+  min-width: 100%;
+}
+
+.title_excluir {
+  color: #4ad509;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
 
 

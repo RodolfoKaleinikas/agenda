@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js"></script>
   <title>Cadastro de tarefas</title>
 </head>
 <body>
